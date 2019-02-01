@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Tic_Tac_Toe
 {
-    enum player { x, o };
+    enum player {x,o};
 
     public partial class Form1 : Form
     {
@@ -58,15 +58,19 @@ namespace Tic_Tac_Toe
                 {
                     MessageBox.Show("Wygrywa kółko");
                 }
+
+
+
                 win = false;
                 pe = new string[9];
                 steps = 0;
             }
             else if (steps >= pe.Length)
             {
-                MessageBox.Show("Remis !");
+                
                 pe = new string[9];
                 steps = 0;
+                MessageBox.Show("Remis !");
             }
 
         }
